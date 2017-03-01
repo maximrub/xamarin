@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Extensions.Core.Extensions
+namespace Xamarin.Extensions.Logging.MobileCenter
 {
     public static class StringExtensions
     {

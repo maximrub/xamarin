@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Extensions.Logging;
-using Xamarin.Extensions.Core.Extensions;
 
 namespace Xamarin.Extensions.Logging.MobileCenter
 {

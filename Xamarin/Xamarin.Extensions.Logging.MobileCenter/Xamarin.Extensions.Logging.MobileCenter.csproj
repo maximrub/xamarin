@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Xamarin.Extensions.Core\Xamarin.Extensions.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Update="NETStandard.Library" Version="1.6.1" />
   </ItemGroup>
 
