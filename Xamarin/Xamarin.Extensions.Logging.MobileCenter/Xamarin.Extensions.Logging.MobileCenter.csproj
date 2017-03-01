@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
+    <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/maximrub/Xamarin</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximrub/Xamarin</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>Xamarin, Logging, MobileCenter</PackageTags>
+    <Copyright>Maxim Rubchinsky</Copyright>
+    <Authors>Maxim Rubchinsky</Authors>
+    <Company>Maxim Rubchinsky</Company>
+    <Description>Visual Studio Mobile Center logger provider implementation for Microsoft.Extensions.Logging</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Analytics" Version="0.6.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Xamarin.Extensions.Core\Xamarin.Extensions.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="1.6.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <Authors>Maxim Rubchinsky</Authors>
+    <Company>Maxim Rubchinsky</Company>
+    <Description>Xamarin Extensions shared API</Description>
+    <Copyright>Maxim Rubchinsky</Copyright>
+    <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/maximrub/Xamarin</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximrub/Xamarin</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>Xamarin Forms</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="1.6.1" />
+  </ItemGroup>
+
+</Project>
