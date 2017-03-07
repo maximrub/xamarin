@@ -7,7 +7,6 @@
         protected AppInitializer(PlatformInitializer i_PlatformInitializer)
         {
             r_PlatformInitializer = i_PlatformInitializer;
-            i_PlatformInitializer.Init();
         }
 
         protected IFreshIOC Container
