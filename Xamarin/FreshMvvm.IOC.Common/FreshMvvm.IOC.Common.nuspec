@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FreshMvvm.IOC.Common</id>
+    <version>1.0.1</version>
+    <authors>Maxim Rubchinsky</authors>
+    <owners>Maxim Rubchinsky</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/maximrub/Xamarin</projectUrl>
+    <description>FreshMvvm IOC common extensions</description>
+    <copyright>Maxim Rubchinsky</copyright>
+    <tags>Xamarin, FreshMvvm, IOC</tags>
+    <dependencies>
+        <dependency id="FreshMvvm" version="2.2.0" exclude="Build,Analyzers" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\FreshMvvm.IOC.Common.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\FreshMvvm.IOC.Common.dll" />
+  </files>
+</package>

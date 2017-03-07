@@ -46,10 +46,10 @@ namespace FreshMvvm.IOC.Common
             foreach(Assembly assembly in i_Assemblies)
             {
                 IEnumerable<Type> modules =
-                    assembly.GetExportedTypes()
+                    assembly.ExportedTypes
                         .Where(
                             i_Type =>
-                                moduleTypeInfo.IsAssignableFrom(i_Type.GetTypeInfo()) && hasDefaultConstructor(i_Type));
+                                moduleTypeInfo.IsAssignableFrom(i_Type.GetTypeInfo()));
                 foreach(Type moduleType in modules)
                 {
                     Module module = Activator.CreateInstance(moduleType) as Module;
@@ -59,11 +59,6 @@ namespace FreshMvvm.IOC.Common
                     }
                 }
             }
-        }
-
-        private static bool hasDefaultConstructor(Type i_Type)
-        {
-            return i_Type.GetTypeInfo().GetConstructor(Type.EmptyTypes) != null;
         }
     }
 }
