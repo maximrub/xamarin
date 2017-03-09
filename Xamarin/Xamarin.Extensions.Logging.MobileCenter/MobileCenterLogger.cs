@@ -95,15 +95,9 @@ namespace Xamarin.Extensions.Logging.MobileCenter
         /// <summary>Begins a logical operation scope.</summary>
         /// <param name="i_State">The identifier for the scope.</param>
         /// <returns>An IDisposable that ends the logical operation scope on dispose.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="i_State"/> is <see langword="null"/></exception>
         public IDisposable BeginScope<TState>(TState i_State)
         {
-            if(i_State == null)
-            {
-                throw new ArgumentNullException(nameof(i_State));
-            }
-
-            return MobileCenterLogScope.Push(r_Name, i_State);
+            return null;
         }
 
         private void writeMessage(LogLevel i_LogLevel, string i_LogName, int i_EventId, string i_Message, Exception i_Exception)
