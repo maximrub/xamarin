@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BaseView xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:base="clr-namespace:Exrin.Base;assembly=Exrin.Base"
+                x:Class="Friends.View.AboutView">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+   <Grid.Children>
+     <Label Text="Name:" Grid.Row="1" Grid.Column="1" />
+     <Label Text="{Binding VisualState.SelectedPerson.FullName}"  Grid.Row="1" Grid.Column="2"/>
+     <Label Text="Phone:" Grid.Row="2" Grid.Column="1" />
+     <Label Text="{Binding VisualState.SelectedPerson.Phone}"  Grid.Row="2" Grid.Column="2"/>
+     <Label Text="Email:" Grid.Row="3" Grid.Column="1" />
+     <Label Text="{Binding VisualState.SelectedPerson.Email}"  Grid.Row="3" Grid.Column="2"/>
+     <Label Text="Address:" Grid.Row="4" Grid.Column="1" />
+     <Label Text="{Binding VisualState.SelectedPerson.Address}"  Grid.Row="4" Grid.Column="2"/>
+     <Button Text="Call" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Command="{Binding CallCommand}"/>
+   </Grid.Children>
+  </Grid>
+</base:BaseView>

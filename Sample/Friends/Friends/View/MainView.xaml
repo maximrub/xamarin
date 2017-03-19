@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BaseView xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:base="clr-namespace:Exrin.Base;assembly=Exrin.Base"
+                x:Class="Friends.View.MainView">
+    <StackLayout Padding="5">
+      <Label Text="Friends list:" />
+        <ListView ItemsSource="{Binding VisualState.Persons}" SelectedItem="{Binding VisualState.SelectedPerson}" SeparatorVisibility="Default">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding FullName}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+      <Button Text="See full info" Command="{Binding FullInfoCommand}" CommandParameter="{Binding VisualState.SelectedPerson}" />
+    </StackLayout>
+</base:BaseView>
