@@ -49,16 +49,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Exrin.Abstraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.1\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.1\lib\netstandard1.1\Exrin.Common.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Common.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.1\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Insights, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.1\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.IOC.LightInjectServiceProvider, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.IOC.LightInjectServiceProvider.1.0.6\lib\portable45-net45+win8\Exrin.IOC.LightInjectServiceProvider.dll</HintPath>
