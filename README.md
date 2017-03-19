@@ -8,7 +8,7 @@ The purpose of this project is to provide you with common packages to help you t
 
 # Getting Started
 ## Install the Nuget Package
-* Xamarin.Extensions.Logging.MobileCenter [![NuGet Badge](https://buildstats.info/nuget/Xamarin.Extensions.Logging.MobileCenter?includePreReleases=true)](https://www.nuget.org/packages/Xamarin.Extensions.Logging.MobileCenter)
+* Xamarin.Extensions.Logging.MobileCenter - Visual Studio Mobile Center logger provider implementation for Microsoft.Extensions.Logging [![NuGet Badge](https://buildstats.info/nuget/Xamarin.Extensions.Logging.MobileCenter?includePreReleases=true)](https://www.nuget.org/packages/Xamarin.Extensions.Logging.MobileCenter)
 ## Sample app
 [Friends App](../../tree/master/Sample) - A basic sample app to help you get started.
 
