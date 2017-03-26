@@ -46,6 +46,7 @@
     <Compile Include="Domain\Validation\Interfaces\IValidatable.cs" />
     <Compile Include="Domain\Validation\Interfaces\IValidator.cs" />
     <Compile Include="Domain\Validation\Services\Validator.cs" />
+    <Compile Include="IOC\ConfigurationCompositionRoot.cs" />
     <Compile Include="Locator\eContainer.cs" />
     <Compile Include="Locator\eStack.cs" />
     <Compile Include="Locator\Views.cs" />
@@ -108,23 +109,26 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Exrin.Abstraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Base, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.Base.1.0.4\lib\portable45-net45+win8+wpa81\Exrin.Base.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Common.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Common.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Insights, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.IOC.LightInjectServiceProvider, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.IOC.LightInjectServiceProvider.1.0.6\lib\portable45-net45+win8\Exrin.IOC.LightInjectServiceProvider.dll</HintPath>
@@ -147,6 +151,9 @@
     <Reference Include="Microsoft.Azure.Mobile.Crashes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.Crashes.0.7.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Microsoft.Azure.Mobile.Crashes.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.1.1.1\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
@@ -165,14 +172,23 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.Primitives.1.1.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.1\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Extensions.Configuration.FileStorageJson, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Extensions.Configuration.FileStorageJson.1.0.3\lib\netstandard1.2\Xamarin.Extensions.Configuration.FileStorageJson.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Extensions.Logging.MobileCenter, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Extensions.Logging.MobileCenter.1.0.1\lib\portable45-net45+win8+wpa81\Xamarin.Extensions.Logging.MobileCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.FileStorage.Abstractions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.FileStorage.Abstractions.1.0.3\lib\netstandard1.2\Xamarin.FileStorage.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>

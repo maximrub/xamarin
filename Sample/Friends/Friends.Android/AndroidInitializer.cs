@@ -5,6 +5,8 @@ using Friends.Domain.Phone.Interfaces;
 using Friends.Droid.Infrastructure.Phone.Services;
 using LightInject;
 using Microsoft.Extensions.DependencyInjection;
+using Xamarin.FileStorage.Abstractions;
+using Xamarin.FileStorage.Android;
 
 namespace Friends.Droid
 {
@@ -14,6 +16,7 @@ namespace Friends.Droid
         {
             base.Register(i_Container);
             i_Container.Register<IPhoneDialer, PhoneDialer>();
+            i_Container.Register<IFileStorage, FileStorage>();
         }
 
         protected override void ConfigureServices(IServiceCollection i_Services)

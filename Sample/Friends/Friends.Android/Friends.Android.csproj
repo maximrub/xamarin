@@ -49,16 +49,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Exrin.Abstraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Common.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Common.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Insights, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.1.1.2\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
+      <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.IOC.LightInjectServiceProvider, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.IOC.LightInjectServiceProvider.1.0.6\lib\portable45-net45+win8\Exrin.IOC.LightInjectServiceProvider.dll</HintPath>
@@ -90,6 +90,7 @@
     <Reference Include="Microsoft.Azure.Mobile.Crashes.Android.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.Crashes.0.7.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Crashes.Android.Bindings.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.1.1.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
@@ -98,6 +99,9 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
@@ -129,6 +133,12 @@
     <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.FileStorage.Abstractions, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.FileStorage.Abstractions.1.0.3\lib\netstandard1.2\Xamarin.FileStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.FileStorage.Android, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.FileStorage.Android.1.0.2\lib\monoandroid71\Xamarin.FileStorage.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
@@ -150,6 +160,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="..\Friends\appsettings.json">
+      <Link>Assets\appsettings.json</Link>
+    </AndroidAsset>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

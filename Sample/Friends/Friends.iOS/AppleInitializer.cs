@@ -3,6 +3,8 @@ using Friends.Domain.Phone.Interfaces;
 using Friends.iOS.Infrastructure.Phone.Services;
 using LightInject;
 using Microsoft.Extensions.DependencyInjection;
+using Xamarin.FileStorage.Abstractions;
+using Xamarin.FileStorage.iOS;
 
 namespace Friends.iOS
 {
@@ -12,6 +14,7 @@ namespace Friends.iOS
         {
             base.Register(i_Container);
             i_Container.Register<IPhoneDialer, PhoneDialer>();
+            i_Container.Register<IFileStorage, FileStorage>();
         }
 
         protected override void ConfigureServices(IServiceCollection i_Services)
