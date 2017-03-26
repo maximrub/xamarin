@@ -17,11 +17,11 @@ namespace Xamarin.Extensions.Configuration.FileStorageJson
         }
 
         /// <exception cref="FormatException">The file is not a valid JSON.</exception>
-        public override async void Load()
+        public override void Load()
         {
             JsonConfigurationFileParser parser = new JsonConfigurationFileParser();
 
-            string content = await r_FileStorage.Read(r_FileName);
+            string content = r_FileStorage.Read(r_FileName);
             try
             {
                 Data = parser.Parse(content);

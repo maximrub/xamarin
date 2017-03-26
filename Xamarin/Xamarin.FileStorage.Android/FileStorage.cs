@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
-using Android.Graphics;
 using Newtonsoft.Json;
 using Xamarin.FileStorage.Abstractions;
 
@@ -22,7 +16,7 @@ namespace Xamarin.FileStorage.Android
         }
 
         /// <exception cref="IOException">Asset read exception.</exception>
-        public async Task<string> Read(string i_FileName)
+        public string Read(string i_FileName)
         {
             string content;
 
@@ -30,7 +24,7 @@ namespace Xamarin.FileStorage.Android
             {
                 using (StreamReader streamReader = new StreamReader(asset))
                 {
-                    content = await streamReader.ReadToEndAsync();
+                    content = streamReader.ReadToEnd();
                 }
             }
 
@@ -38,9 +32,9 @@ namespace Xamarin.FileStorage.Android
         }
 
         /// <exception cref="IOException">Asset read exception.</exception>
-        public async Task<T> Read<T>(string i_FileName)
+        public T Read<T>(string i_FileName)
         {
-            string content = await Read(i_FileName);
+            string content = Read(i_FileName);
             T data = JsonConvert.DeserializeObject<T>(content);
 
             return data;

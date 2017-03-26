@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Newtonsoft.Json;
 using Xamarin.FileStorage.Abstractions;
 
@@ -11,11 +6,11 @@ namespace Xamarin.FileStorage.iOS
 {
     public class FileStorage : IFileStorage
     {
-        public async Task<string> Read(string i_FileName)
+        public string Read(string i_FileName)
         {
             string content;
 
-            byte[] data = await read(i_FileName);
+            byte[] data = read(i_FileName);
             if(data == null)
             {
                 content = string.Empty;
@@ -28,20 +23,20 @@ namespace Xamarin.FileStorage.iOS
             return content;
         }
 
-        public async Task<T> Read<T>(string i_FileName)
+        public T Read<T>(string i_FileName)
         {
-            string content = await Read(i_FileName);
+            string content = Read(i_FileName);
             T data = JsonConvert.DeserializeObject<T>(content);
 
             return data;
         }
 
-        private Task<byte[]> read(string i_FileName)
+        private byte[] read(string i_FileName)
         {
             byte[] content = File.ReadAllBytes(i_FileName);
             content = content.CleanByteOrderMark();
 
-            return Task.FromResult(content);
+            return content;
         }
     }
 }
