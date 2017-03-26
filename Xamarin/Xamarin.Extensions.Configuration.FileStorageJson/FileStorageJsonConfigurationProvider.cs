@@ -14,7 +14,6 @@ namespace Xamarin.Extensions.Configuration.FileStorageJson
         {
             r_FileStorage = i_FileStorage;
             r_FileName = i_FileName;
-            throw new NotImplementedException();
         }
 
         /// <exception cref="FormatException">The file is not a valid JSON.</exception>
