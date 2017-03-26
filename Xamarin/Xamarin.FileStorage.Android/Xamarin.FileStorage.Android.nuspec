@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Xamarin.FileStorage.Android</title>
+    <authors>Maxim Rubchinsky</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/maximrub/Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Xamarin FileStorage Android provider</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Maxim Rubchinsky</copyright>
+    <tags>Xamarin FileStorage</tags>
+  </metadata>
+</package>

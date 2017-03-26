@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshMvvm.IOC.Common", "FreshMvvm.IOC.Common\FreshMvvm.IOC.Common.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Extensions.Logging.MobileCenter", "Xamarin.Extensions.Logging.MobileCenter\Xamarin.Extensions.Logging.MobileCenter.csproj", "{B06DBEEE-62F2-4377-AB50-614CF4D286A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.FileStorage.Abstractions", "Xamarin.FileStorage.Abstractions\Xamarin.FileStorage.Abstractions.csproj", "{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.FileStorage.iOS", "Xamarin.FileStorage.iOS\Xamarin.FileStorage.iOS.csproj", "{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.FileStorage.Android", "Xamarin.FileStorage.Android\Xamarin.FileStorage.Android.csproj", "{5E4C4440-DDE3-41D9-8097-94FB6C554331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,42 @@ Global
 		{B06DBEEE-62F2-4377-AB50-614CF4D286A3}.Release|x64.Build.0 = Release|Any CPU
 		{B06DBEEE-62F2-4377-AB50-614CF4D286A3}.Release|x86.ActiveCfg = Release|Any CPU
 		{B06DBEEE-62F2-4377-AB50-614CF4D286A3}.Release|x86.Build.0 = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|x64.Build.0 = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|x64.Build.0 = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F910CE9-5E9D-44D0-9FDC-389E3C5B9B2B}.Release|x86.Build.0 = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|x64.Build.0 = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Debug|x86.Build.0 = Debug|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|x64.ActiveCfg = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|x64.Build.0 = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|x86.ActiveCfg = Release|Any CPU
+		{0063B0F9-6B78-4C9A-B4AE-9F17578E259D}.Release|x86.Build.0 = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|x64.Build.0 = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E4C4440-DDE3-41D9-8097-94FB6C554331}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
