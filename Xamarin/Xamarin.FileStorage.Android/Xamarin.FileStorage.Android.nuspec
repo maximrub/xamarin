@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.0.1</version>
     <title>Xamarin.FileStorage.Android</title>
     <authors>Maxim Rubchinsky</authors>
     <owners>$author$</owners>
