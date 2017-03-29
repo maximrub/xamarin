@@ -1,5 +1,5 @@
 using Android.Content;
-using Exrin.IOC.LightInjectServiceProvider;
+using Exrin.IOC;
 using Friends.Domain.Peoples.Interfaces;
 using Friends.Domain.Phone.Interfaces;
 using Friends.Droid.Infrastructure.Phone.Services;

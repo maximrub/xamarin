@@ -38,6 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AssemblyRegister.cs" />
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Core\LoggingEvents.cs" />
     <Compile Include="Domain\Peoples\Entities\Person.cs" />
     <Compile Include="Domain\Peoples\Interfaces\IPersonsRepository.cs" />
@@ -130,8 +132,8 @@
     <Reference Include="Exrin.Insights, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.1.2.0\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
     </Reference>
-    <Reference Include="Exrin.IOC.LightInjectServiceProvider, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.IOC.LightInjectServiceProvider.1.0.6\lib\portable45-net45+win8\Exrin.IOC.LightInjectServiceProvider.dll</HintPath>
+    <Reference Include="Exrin.IOC.LightInjectServiceProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Exrin.IOC.LightInjectServiceProvider.1.0.7\lib\portable45-net45+win8\Exrin.IOC.LightInjectServiceProvider.dll</HintPath>
     </Reference>
     <Reference Include="Exrin.Navigation.XamarinForms, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Exrin.Navigation.XamarinForms.1.0.3\lib\portable45-net45+win8+wpa81\Exrin.Navigation.XamarinForms.dll</HintPath>

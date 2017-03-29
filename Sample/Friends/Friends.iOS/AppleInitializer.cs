@@ -1,4 +1,4 @@
-﻿using Exrin.IOC.LightInjectServiceProvider;
+﻿using Exrin.IOC;
 using Friends.Domain.Phone.Interfaces;
 using Friends.iOS.Infrastructure.Phone.Services;
 using LightInject;

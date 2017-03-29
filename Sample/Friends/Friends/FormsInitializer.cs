@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using Exrin.Abstraction;
-using Exrin.IOC.LightInjectServiceProvider;
+﻿using Exrin.IOC;
 using Friends.Domain.Peoples.Interfaces;
 using Friends.Domain.Validation.Interfaces;
 using Friends.Domain.Validation.Services;
@@ -14,8 +12,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Xamarin.Extensions.Logging.MobileCenter;
-using Bootstrapper = Exrin.Framework.Bootstrapper;
-using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace Friends
 {
@@ -33,12 +29,6 @@ namespace Friends
         {
             base.ConfigureServices(i_Services);
             i_Services.AddLogging();
-        }
-
-        protected override void RegisterFrameworkAssemblies(Bootstrapper i_Bootstrapper)
-        {
-            base.RegisterFrameworkAssemblies(i_Bootstrapper);
-            i_Bootstrapper.RegisterAssembly(AssemblyAction.Bootstrapper, this.GetType().GetTypeInfo().Assembly.GetName());
         }
 
         protected override void OnInitialized(ServiceContainer i_Container)

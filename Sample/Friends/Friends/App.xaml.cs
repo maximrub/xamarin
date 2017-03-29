@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Exrin.Abstraction;
 using Exrin.Framework;
-using Exrin.IOC.LightInjectServiceProvider;
+using Exrin.IOC;
 using Friends.Locator;
 using Xamarin.Forms;
 
@@ -15,12 +15,13 @@ namespace Friends
         public App(PlatformInitializer i_PlatformInitializer)
         {
             InitializeComponent();
-            Exrin.IOC.LightInjectServiceProvider.Bootstrapper.Init(i_PlatformInitializer, new FormsInitializer());
+            Exrin.IOC.LightInjectProvider.Init(i_PlatformInitializer, new FormsInitializer());
         }
 
         protected override void OnStart()
         {
-            INavigationService navigationService = Exrin.IOC.LightInjectServiceProvider.Bootstrapper.Instance.InjectionProxy.Get<INavigationService>();
+            IInjectionProxy injectionProxy = Bootstrapper.Instance.Init();
+            INavigationService navigationService = injectionProxy.Get<INavigationService>();
             navigationService.Navigate(new StackOptions()
             {
                 StackChoice = eStack.Authentication
