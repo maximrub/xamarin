@@ -16,16 +16,17 @@ namespace Friends
         {
             InitializeComponent();
             Exrin.IOC.LightInjectProvider.Init(i_PlatformInitializer, new FormsInitializer());
-        }
-
-        protected override void OnStart()
-        {
             IInjectionProxy injectionProxy = Bootstrapper.Instance.Init();
             INavigationService navigationService = injectionProxy.Get<INavigationService>();
             navigationService.Navigate(new StackOptions()
             {
                 StackChoice = eStack.Authentication
             });
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
         }
 
         protected override void OnSleep()
