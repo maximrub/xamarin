@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <Authors>Maxim Rubchinsky</Authors>
+    <Company>Maxim Rubchinsky</Company>
+    <Description>Xamarin Configuration provider</Description>
+    <Copyright>Maxim Rubchinsky</Copyright>
+    <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/maximrub/Xamarin</PackageProjectUrl>
+    <RepositoryType>https://github.com/maximrub/Xamarin</RepositoryType>
+    <PackageTags>Xamarin Configuration</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+
+</Project>

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Xamarin.Extensions.Configuration.Abstractions.Services;
 
-namespace Xamarin.Extensions.Configuration.FileStorageJson
+namespace Xamarin.Extensions.Configuration.FileStorageJson.Services
 {
     internal class JsonConfigurationFileParser
     {

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Xamarin.Extensions.Logging.MobileCenter")]
-[assembly: AssemblyDescription("Visual Studio Mobile Center logger provider implementation for Microsoft.Extensions.Logging")]
+[assembly: AssemblyDescription("Visual Studio Mobile Center logger provider")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Maxim Rubchinsky")]
 [assembly: AssemblyProduct("Xamarin.Extensions.Logging.MobileCenter")]
@@ -26,5 +26,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.4.0")]
-[assembly: AssemblyFileVersion("1.0.4.0")]
+[assembly: AssemblyVersion("1.0.6.0")]
+[assembly: AssemblyFileVersion("1.0.6.0")]

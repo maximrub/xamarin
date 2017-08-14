@@ -1,9 +1,11 @@
 ﻿using System;
-using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
+using Xamarin.Extensions.Configuration.Abstractions.Services;
 using Xamarin.FileStorage.Abstractions;
 
-namespace Xamarin.Extensions.Configuration.FileStorageJson
+namespace Xamarin.Extensions.Configuration.FileStorageJson.Services
 {
     public class FileStorageJsonConfigurationProvider : ConfigurationProvider
     {
@@ -16,6 +18,9 @@ namespace Xamarin.Extensions.Configuration.FileStorageJson
             r_FileName = i_FileName;
         }
 
+        /// <summary>
+        /// Loads (or reloads) the data for this provider.
+        /// </summary>
         /// <exception cref="FormatException">The file is not a valid JSON.</exception>
         public override void Load()
         {

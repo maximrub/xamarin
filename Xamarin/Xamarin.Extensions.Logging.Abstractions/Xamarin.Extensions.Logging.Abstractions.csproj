@@ -2,18 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Maxim Rubchinsky</Authors>
     <Company>Maxim Rubchinsky</Company>
     <Copyright>Maxim Rubchinsky</Copyright>
+    <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/maximrub/Xamarin</PackageProjectUrl>
     <RepositoryUrl>https://github.com/maximrub/Xamarin</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageTags>Xamarin FileStorage Configuration</PackageTags>
-    <Description>Xamarin FileStorage Json configuration provider</Description>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.8.0</AssemblyVersion>
-    <FileVersion>1.0.8.0</FileVersion>
+    <PackageTags>Xamarin Logging</PackageTags>
+    <Description>Xamarin Logging provider</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,9 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="Xamarin.Extensions.Configuration.Abstractions" Version="1.0.1" />
-    <PackageReference Include="Xamarin.FileStorage.Abstractions" Version="1.0.4" />
   </ItemGroup>
 
 </Project>

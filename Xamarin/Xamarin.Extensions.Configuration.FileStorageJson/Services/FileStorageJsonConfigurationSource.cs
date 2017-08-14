@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Xamarin.Extensions.Configuration.Abstractions.Interfaces;
 using Xamarin.FileStorage.Abstractions;
 
-namespace Xamarin.Extensions.Configuration.FileStorageJson
+namespace Xamarin.Extensions.Configuration.FileStorageJson.Services
 {
     public class FileStorageJsonConfigurationSource : IConfigurationSource
     {
