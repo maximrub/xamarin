@@ -11,6 +11,7 @@
     <PackageTags>Xamarin Logging</PackageTags>
     <Description>Xamarin Logging provider</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -18,7 +19,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Extensions.Configuration.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Xamarin.Extensions.Configuration.Abstractions" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
   </ItemGroup>
 
 </Project>

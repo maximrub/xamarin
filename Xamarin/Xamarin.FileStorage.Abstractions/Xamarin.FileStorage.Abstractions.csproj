@@ -12,13 +12,17 @@
     <PackageTags>Xamarin FileStorage</PackageTags>
     <Description>Xamarin FileStorage Abstractions</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>Full</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
+  </ItemGroup>
 
 </Project>

@@ -11,9 +11,9 @@
     <PackageLicenseUrl>https://github.com/maximrub/Xamarin/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>Xamarin FileStorage Configuration</PackageTags>
     <Description>Xamarin FileStorage Json configuration provider</Description>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.8.0</AssemblyVersion>
-    <FileVersion>1.0.8.0</FileVersion>
+    <Version>1.0.9</Version>
+    <AssemblyVersion>1.0.9.0</AssemblyVersion>
+    <FileVersion>1.0.9.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -22,8 +22,12 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="Xamarin.Extensions.Configuration.Abstractions" Version="1.0.1" />
-    <PackageReference Include="Xamarin.FileStorage.Abstractions" Version="1.0.4" />
+    <PackageReference Include="Xamarin.Extensions.Configuration.Abstractions" Version="1.0.2" />
+    <PackageReference Include="Xamarin.FileStorage.Abstractions" Version="1.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
   </ItemGroup>
 
 </Project>

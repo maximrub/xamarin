@@ -11,11 +11,15 @@
     <RepositoryType>https://github.com/maximrub/Xamarin</RepositoryType>
     <PackageTags>Xamarin Configuration</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>Full</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
+  </ItemGroup>
 
 </Project>
